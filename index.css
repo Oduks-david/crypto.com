@@ -1,0 +1,1204 @@
+*,
+*::before,
+*::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+    -webkit-box-sizing: inherit;
+}
+
+html{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    font-family: 'Oxanium', sans-serif;
+    color: white;
+}
+
+body{
+    background-image: url('hero-bg.png');
+}
+
+.hero{
+    margin: 1.4rem 1rem 0 1rem;
+    display: flex;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+    align-items: center;
+    -webkit-align-items: center;
+}
+
+nav{
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    background-color: #252540;
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    -webkit-align-items: center;
+    justify-content: center;
+    -webkit-justify-content: center;
+    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    transition: transform 1s ease-in-out;
+    -webkit-transition: transform 1s ease-in-out;
+    position: fixed;
+}
+
+.menu-bar svg,
+.cancel svg{
+    color: white;
+    width: 1.7rem;
+    cursor: pointer;
+}
+
+.cancel{
+    margin: 1.5rem;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.nav-item a{
+    color: white;
+    font-size: 1.5rem;
+    font-family: 'Poppins',sans-serif;
+}
+
+li{
+    list-style-type: none;
+}
+
+.nav-list{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    align-items: center;
+    -webkit-align-items: center;
+    justify-content: center;
+    -webkit-justify-content: center;
+}
+
+.nav-item{
+    padding-bottom: 2.5rem;
+}
+
+
+
+.login{
+    border-right: 1px solid rgba(255, 255, 255, .3);
+    padding-right: 2rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.register{
+    background-color: rgb(0, 119, 255);
+    padding: .5rem 1rem;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    margin-left: 2rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.box-area{
+    margin: 1.4rem 1rem 0 1rem;
+    display: flex;
+    justify-content: space-around;
+    -webkit-justify-content: space-around;
+    align-items: center;
+    -webkit-align-items: center;
+    max-width: 16rem;
+    background-color: rgba(255, 255, 255, .2);
+    margin-top: 1.8rem;
+    padding: .4rem .2rem;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    font-size: .9rem;
+}
+
+.save{
+    width: 5rem;
+    background-color: white;
+    color: gray;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    text-align: center;
+}
+
+.box-area small:nth-child(2){  
+    font-family: 'Poppins', sans-serif;
+}
+
+.headline{
+    margin: 1.8rem 1rem 0 1rem;
+}
+
+.headline h1{
+    font-size: 2.3rem;
+    line-height: 2.6rem;
+    max-width: 25rem;
+}
+
+.headline small{
+    margin-top: .3rem;
+    color: rgba(255, 255, 255, .8);
+    font-family: 'Poppins', sans-serif;
+}
+
+.free-button{
+    margin: 1.4rem 1rem 0 1rem;
+    background-color: rgb(0, 119, 255);
+    padding: .3rem;
+    width: 12rem;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+}
+
+
+.free-button i{
+    margin-left: 2rem;
+    color: rgb(0, 119, 255);
+    background-color: white;
+    padding: 10px 13px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    font-size: .8rem;
+}
+
+.hero-image img{
+    margin: .8rem;
+    width: 90%;
+}
+
+.second-section{
+    margin: 4rem 1rem 0 1rem;
+    display: flex;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    align-items: center;
+    -webkit-align-items: center;
+    justify-content: center;
+    -webkit-justify-content: center;
+}
+
+.digital{
+    display: flex;
+    align-items: center;
+    -webkit-align-items: center;
+    margin-bottom: 2rem;
+}
+
+.icon{
+    padding: 20px 22px;
+    background-color: rgba(255, 255, 255, .1);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+}
+
+.digital svg{
+    width: 1rem;
+    color: #3366bb;
+}
+
+.digital-text{
+    margin-left: 1.5rem;
+}
+
+.digital-text small{
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.third-section{
+    margin: 4rem 1rem 0 1rem;
+}
+
+.chappo-headline h1{
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 2rem;
+}
+
+.chappo-headline p{
+    margin-top: 1rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.chappo-button{
+    width: 8rem;
+    text-align: center;
+    margin-top: 1rem;
+    padding: .5rem;
+    background-color: rgb(0, 119, 255);
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+}
+
+
+.chappo-image img{
+    width: 100%;
+}
+
+.fourth-section{
+    margin: 5rem 1rem 0 1rem;
+}
+
+.earning{
+    text-align: center;
+}
+
+.earning-text{
+    margin-top: 1rem;
+    line-height: 1rem;
+}
+
+.earning-text small{
+    font-family: 'Poppins', sans-serif;
+}
+
+.calculate-container{
+    margin-top: 2.5rem;
+    background-color: white;
+    padding: 1.5rem 1.3rem;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+}
+
+.hash-container{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+
+}
+
+
+.hash-container input{
+    padding: .6rem;
+    border: none;
+    outline: none;
+    border-bottom: 1px ridge rgba(0, 0, 0, .2);
+}
+
+.hash-container input::placeholder,
+.hash-container select{
+    font-size: 1.2rem;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+}
+
+.hash-button{
+    width: 9rem;
+    text-align: center;
+    margin-top: 3rem;
+    padding: .8rem;
+    background-color: rgb(0, 119, 255);
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    font-size: 1.2rem;
+}
+
+input::-webkit-inner-spin-button{
+    display: none;
+}
+
+.hash-container select{
+    margin-top: 2.5rem;
+    padding: .6rem;
+    border: none;
+    outline: none;
+    border-bottom: 1px ridge rgba(0, 0, 0, .2);
+}
+
+.revenue-text{
+    margin-top: 2rem;
+}
+
+.revenue-text h3{
+    color: #3366bb;
+    font-weight: 500;
+}
+
+.revenue-text h1{
+    margin-top: 1.2rem;
+    color: black;
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+.revenue-text h1 span{
+    color: #3366bb; 
+}
+
+.revenue-text p{
+    margin-top: 1.2rem;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    color: rgba(0, 0, 0, .7);
+}
+
+.fifth-section{
+    background-color: #f1f1f1;
+    color: black;
+    padding-top: 11.5rem;
+    padding-bottom: 2.5rem;
+    position: relative;
+    margin-top: -7rem;
+    z-index: -1000;
+
+}
+
+.trade-container{
+    text-align: center;
+}
+
+.coin-container{
+    margin: 4rem 1rem 0 1rem;
+}
+
+.bitcoin-container{
+    background-color: white;
+    padding: 3rem 0;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;  
+    -webkit-flex-direction: column;
+}
+
+.bitcoin-text{
+    padding: 2rem 1rem 1rem;
+    text-align: center;
+    line-height: 1.5rem;
+}
+
+.bitcoin-text p{
+    font-family: 'Poppins', sans-serif;
+}
+
+.bitcoin-button{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    -webkit-align-items: center;
+}
+
+.btc{
+    margin-top: 2.5rem;
+    display: flex;
+    justify-content: center;
+    -webkit-justify-content: center;
+    align-items: center;
+    -webkit-align-items: center;
+}
+
+.btc h1{
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.btc p{
+    margin-left: .5rem;
+}
+
+.bitcoin-button svg,
+.ethereum-button svg,
+.litecoin-button svg{
+    width: 2rem;
+}
+
+.svg-icon{
+    margin-top: 1rem;
+    border: 2px solid rgba(0, 0, 0, .2);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    padding: 1rem 1.2rem;
+}
+
+.ethereum-container{
+    background-color: white;
+    padding: 3rem 0;
+    border-radius: 20px;
+    margin-top: 3rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+}
+
+.ethereum-button{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    -webkit-align-items: center;
+}
+
+.ethereum-button a,
+.litecoin-button a,
+.bitcoin-button a{
+    color: #3366bb;
+}
+
+.litecoin-container{
+    background-color: white;
+    padding: 3rem 0;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    margin-top: 3rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+}
+
+.litecoin-button{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    -webkit-align-items: center;
+}
+
+.ethereum-container:first-of-type{
+    background-image: url("hero-bg.png");
+    color: white;
+}
+
+.ethereum-container:first-of-type p{
+    display: block;
+    color: white;
+}
+
+.ethereum-container:first-of-type .ethereum-button a{
+    display: flex;
+    justify-content: center;
+    -webkit-justify-content: center;
+    align-items: center;
+    -webkit-align-items: center;
+    flex-direction: row;
+    -webkit-flex-direction: row;
+    background-color: #3366bb;
+    padding: .1rem 1rem .1rem 2rem;
+    border-radius: 35px;
+    -webkit-border-radius: 35px;
+}
+
+.ethereum-container:first-of-type .svg-icon {
+    border: none;
+    color: white;
+    padding: initial;
+    padding-bottom: .7rem;
+    padding-left: 1rem;
+}
+
+.ethereum-button p,
+.litecoin-button p,
+.bitcoin-button p{
+    display: none;
+}
+
+.sixth-section{
+    margin: 4rem 1.5rem 0 1.5rem;
+}
+
+.detailed-container{
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+.invest-button{
+    width: 6rem;
+    text-align: center;
+    margin-top: 1rem;
+    padding: .5rem;
+    background-color: rgb(0, 119, 255);
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    font-size: .8rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.smart{
+    margin-top: 4rem;
+}
+
+.smart p{
+    margin-top: 1rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: .9rem;
+    color: rgba(255, 255, 255, .5);
+    line-height: 1rem;
+}
+
+.invest-image{
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.invest-image img{
+    width: 90%;
+}
+
+.seventh-section{
+    margin: 4rem 1rem 2rem 1rem;
+    background: url('newsletter-box.png')no-repeat;
+    background-size: cover;
+    padding: 2rem 1.5rem;
+    border-radius: 0 5px 5px;
+}
+
+
+.mining p{
+    font-family: 'Poppins', sans-serif;
+    font-size: .75rem;
+    margin-top: .5rem;
+}
+
+.message-area{
+    margin-top: 1.5rem;
+}
+
+.message-area input{
+    width: 100%;
+    padding: .6rem 0;
+    border: none;
+    outline: none;
+    background-color: #0000;
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+.message-area input::placeholder{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+}
+
+.subcribe-button{
+    width: 7.5rem;
+    text-align: center;
+    margin-top: 1rem;
+    padding: .5rem;
+    background-color: white;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    font-size: 1.2rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.subcribe-button a{
+    color: black;
+}
+
+footer{
+    margin-top: 4rem;
+}
+
+.footer-section{
+    display: block;
+    text-align: center;
+}
+
+.quick{
+    margin-top: 3rem;
+}
+
+.quick p{
+    margin-top: 1.3rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    opacity: .8;
+}
+
+.quick p:hover{
+    color: #3366bb;
+    cursor: pointer;
+}
+
+h3{
+    font-weight: 100;
+}
+
+.visa{
+    margin-top: 3rem;
+}
+
+.visa h3{
+    font-size: 1.1rem;
+}
+
+.visa-columns{
+    margin-top: 2rem;
+}
+
+.reserved{
+    margin: 2rem ;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.reserved p span{
+    text-transform: uppercase;
+}
+
+.social-media ul{
+    display: flex;
+    flex-direction: row;
+    -webkit-flex-direction: row;
+    justify-content: space-around;
+    -webkit-justify-content: space-around;
+}
+
+.social-media li{
+    padding-left: 1.5rem;
+}
+
+.social-media svg{
+    margin-top: 2rem;
+    fill: white;
+}
+
+@media screen and (min-width: 560px){
+
+    .first-section{
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+    }
+
+    
+}
+
+@media screen and (min-width: 620px){
+    
+    .first-section{
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+}
+
+@media screen and (min-width: 640px){
+    
+    .first-section{
+        margin-left: 2.5rem;
+        margin-right: 2.5rem;
+    }
+}
+
+@media screen and (min-width: 680px){
+    
+    .first-section{
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+}
+
+@media screen and (min-width: 720px){
+    
+    .first-section{
+        margin-left: 3.5rem;
+        margin-right: 3.5rem;
+    }
+}
+
+@media screen and (min-width: 740px){
+    
+    .first-section{
+        margin-left: 4rem;
+        margin-right: 4rem;
+    }
+}
+
+@media screen and (min-width: 760px){
+    
+    .first-section{
+        margin-left: 4.5rem;
+        margin-right: 4.5rem;
+    }
+}
+
+@media screen and (min-width: 780px){
+    
+    .first-section{
+        margin-left: 5rem;
+        margin-right: 5rem;
+    }
+}
+
+@media screen and (min-width: 800px){
+    
+    .first-section{
+        margin-left: 5.5rem;
+        margin-right: 5.5rem;
+    }
+
+    .coin-container{
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 820px){
+    
+    .first-section{
+        margin-left: 6rem;
+        margin-right: 6rem;
+    }
+
+    .coin-container{
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+}
+
+@media screen and (min-width: 840px){
+    
+    .first-section{
+        margin-left: 6.5rem;
+        margin-right: 6.5rem;
+    }
+
+    .coin-container{
+        margin-left: 2.5rem;
+        margin-right: 2.5rem;
+    }
+}
+
+@media screen and (min-width: 860px){
+    
+    .first-section{
+        margin-left: 7rem;
+        margin-right: 7rem;
+    }
+
+    
+    .coin-container{
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+}
+
+
+@media screen and (min-width: 880px){
+    
+    .first-section{
+        margin-left: 7.5rem;
+        margin-right: 7.5rem;
+    }
+
+    
+    .coin-container{
+        margin-left: 3.5rem;
+        margin-right: 3.5rem;
+    }
+}
+
+@media screen and (min-width: 900px){
+    
+    .first-section{
+        margin-left: 8rem;
+        margin-right: 8rem;
+    }
+
+    
+    .coin-container{
+        margin-left: 4rem;
+        margin-right: 4rem;
+    }
+}
+
+@media screen and (min-width: 920px){
+    
+    .first-section{
+        margin-left: 8.5rem;
+        margin-right: 8.5rem;
+    }
+
+    
+    .coin-container{
+        margin-left: 4.5rem;
+        margin-right: 4.5rem;
+    }
+}
+
+@media screen and (min-width: 940px){
+    
+    .first-section{
+        margin-left: 9rem;
+        margin-right: 9rem;
+    }
+
+    
+    .coin-container{
+        margin-left: 5rem;
+        margin-right: 5rem;
+    }
+}
+
+@media screen and (min-width: 960px){
+    
+    .first-section{
+        margin-left: 9.5rem;
+        margin-right: 9.5rem;
+    }
+
+    
+    .coin-container{
+        margin-left: 5.5rem;
+        margin-right: 5.5rem;
+    }
+}
+
+@media screen and (min-width: 980px){
+    
+    .first-section{
+        margin-left: 10rem;
+        margin-right: 10rem;
+    }
+
+    
+    .coin-container{
+        margin-left: 6rem;
+        margin-right: 6rem;
+    }
+}
+
+@media screen and (min-width: 1000px){
+    
+    .first-section{
+        margin-left: 10.5rem;
+        margin-right: 10.5rem;
+    }
+
+    
+    .coin-container{
+        margin-left: 6.5rem;
+        margin-right: 6.5rem;
+    }
+}
+
+@media screen and (min-width: 1020px){
+    .first-section{
+        margin-left: 11rem;
+        margin-right: 11rem;
+    }
+    
+    .coin-container{
+        margin-left: 8rem;
+        margin-right: 8rem;
+    }
+}
+
+
+@media screen and (min-width: 1024px){
+
+    
+     .cancel,
+     .menu-bar{
+    display: none;
+   }
+
+
+
+   nav{
+       width: inherit;
+       position: absolute;
+       top: 0;
+       left: 100%;
+       background-color: transparent;
+       justify-content: right;
+       -webkit-justify-content: right;
+   }
+
+   .nav-list{
+       display: flex;
+       flex-direction: row;
+       -webkit-flex-direction: row;
+   }
+
+   .nav-item{
+       padding-left: 2rem;
+   }
+
+   .nav-item a{
+       font-size: 1rem;
+   }
+
+   .registration{
+       display: flex;
+   }
+
+   .login{
+       margin-top: .5rem;
+   }
+
+   .first-section{
+       margin-left: 0;
+       margin-right: 2rem;
+       display: flex;
+       justify-content: space-between;
+       -webkit-justify-content: space-between;
+   }
+
+   .box-area{
+    max-width: 17rem;
+   }
+   .headline h1{
+    font-size: 2.5rem;
+    line-height: 2.6rem;
+    max-width: 23rem;
+}
+
+   .hero-image{
+       width: 27rem;
+   }
+
+   .second-section{
+    margin: 4rem 1rem 0 1rem;
+    display: flex;
+    flex-direction: row;
+    -webkit-flex-direction: row;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+}
+
+.third-section{
+    display: flex;
+    flex-direction: row-reverse;
+    -webkit-flex-direction: row-reverse;
+}
+
+.chappo-image img{
+    width: 100%;
+    margin-top: 0;
+}
+
+.chappo-headline h1{
+    font-size: 3rem;
+    line-height: 3rem;
+}
+
+
+.coin-container{
+    display: flex;
+    justify-content: space-around;
+    -webkit-justify-content: space-around;
+     margin-left: 2.5rem;
+     margin-right: 2.5rem;
+}
+
+.bitcoin-container,
+.litecoin-container,
+.ethereum-container{
+    width: 30%;
+}
+
+.hash-container{
+    display: flex;
+    flex-direction: row;
+    -webkit-flex-direction: row;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+}
+
+.hash-container input,
+.hash-container select{
+    width: 20rem;
+}
+
+.invest-container{
+    display: flex;
+}
+
+.detailed-container{
+    display: flex;
+    flex-direction: row-reverse;
+    -webkit-flex-direction: row-reverse;
+}
+
+.mining{
+    display: flex;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+    align-items: center;
+    -webkit-align-items: center;
+    padding: 2rem .5rem 3rem .5rem;
+}
+
+.start{
+    width: 23rem;
+}
+
+.message-area{
+    display: flex;
+    width: initial;
+}
+
+.message-area input{
+    width: 22rem;
+}
+.footer-section{
+    display: flex;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+}
+
+.footer-section a{
+    margin-top: 2.3rem;
+}
+
+.reserved{
+    display: flex;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+}
+
+.reserved p{
+    margin-top: 2.3rem;
+}
+
+}
+
+@media screen and (min-width: 1100px){
+
+    .headline h1{
+        font-size: 3rem;
+        line-height: 3rem;
+        max-width: 30rem;
+    }
+    .first-section{
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+    }
+
+    .calculate-container{
+        margin-left: 4rem;
+        margin-right: 4rem;
+    }
+
+    
+    .second-section,
+    .seventh-section,
+    .sixth-section,
+    footer{
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+}
+
+
+@media screen and (min-width: 1140px){
+    .first-section{
+        margin-left: 2rem;
+        margin-right:2rem;
+    }
+
+    .coin-container{
+        margin-left: 3.5rem;
+        margin-right: 3.5rem;
+    }
+
+    
+    .second-section,
+    .seventh-section,
+    .sixth-section,
+    footer{
+        margin-left: 3.5rem;
+        margin-right: 3.5rem;
+    }
+}
+
+
+@media screen and (min-width: 1160px){
+    .first-section{
+        margin-left: 2.5rem;
+        margin-right: 2.5rem;
+    }
+
+    .coin-container{
+        margin-left: 4rem;
+        margin-right: 4rem;
+    }
+
+    .second-section,
+    .seventh-section,
+    .sixth-section,
+    footer{
+        margin-left: 4rem;
+        margin-right: 4rem;
+    }
+}
+
+@media screen and (min-width: 1180px){
+    .first-section{
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+
+    .coin-container{
+        margin-left: 4.5rem;
+        margin-right: 4.5rem;
+    }
+
+    .second-section,
+    .seventh-section,
+    .sixth-section,
+    footer{
+        margin-left: 4.5rem;
+        margin-right: 4.5rem;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .first-section{
+        margin-left: 3.5rem;
+        margin-right: 3.5rem;
+    }
+
+    .coin-container{
+        margin-left: 5rem;
+        margin-right: 5rem;
+    }
+
+    .second-section,
+    .seventh-section,
+    .sixth-section,
+    footer{
+        margin-left: 5rem;
+        margin-right: 5rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
